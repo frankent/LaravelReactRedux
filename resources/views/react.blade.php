@@ -11,7 +11,7 @@
 
   <title>{{ config('app.name', 'Laravel 5.5 with React 16 Boilerplate') }}</title>
 
-  <!-- Styles -->
+  {{--<!-- Styles -->--}}
   {{--<link href="{{ mix('css/app.css') }}" rel="stylesheet">--}}
 
   <!-- Scripts -->
@@ -22,13 +22,11 @@
 </head>
 <body>
 <noscript>If you're seeing this message, that means <strong>JavaScript has been disabled on your browser</strong>, please <strong>enable JS</strong> to make this app work.</noscript>
-<div id="app">
-  @yield('content')
-</div>
+<div id="root"></div>
 
 <!-- Scripts -->
 {{--<script src="{{mix('/js/manifest.js')}}"></script>--}}
 {{--<script src="{{mix('/js/vendor.js')}}"></script>--}}
-<script src="{{mix('/js/app.js')}}"></script>
+<script src="{{mix('/js/main.js')}}"></script>
 </body>
 </html>
